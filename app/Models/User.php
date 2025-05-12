@@ -21,7 +21,8 @@ class User extends Authenticatable
         'telegram_id',
         'username',
         'is_verified',
-        'voted_student_id'
+        'voted_student_id',
+        'joined_channels'
     ];
     public function votedStudent()
     {

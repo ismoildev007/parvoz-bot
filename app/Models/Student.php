@@ -13,7 +13,7 @@ class Student extends Model
 
     public function mentors()
     {
-        return $this->belongsToMany(Mentor::class);
+        return $this->belongsToMany(Mentor::class, 'student_mentor');
     }
 
     public function votedUsers()
@@ -21,4 +21,3 @@ class Student extends Model
         return $this->hasMany(User::class, 'voted_student_id');
     }
 }
-
